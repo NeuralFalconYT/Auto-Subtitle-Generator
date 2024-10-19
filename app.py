@@ -390,6 +390,22 @@ def subtitle_maker(Audio_or_Video_File,Source_Language,Destination_Language):
     original_srt_file,translated_srt_file,original_text_file,translated_text_file,used_audio_path=None,None,None,None,None 
   return original_srt_file,original_text_file,translated_srt_file,translated_text_file
 
+
+# Audio_or_Video_File = '/content/chinese_sugarcane.mp4'  # @param {type: "string"}
+
+# Source_Language= "Automatic"# @param ['Automatic','English','Hindi','Bengali','Akan', 'Albanian', 'Amharic', 'Arabic', 'Armenian', 'Assamese', 'Azerbaijani', 'Basque', 'Bashkir', 'Bengali', 'Bosnian', 'Bulgarian', 'Burmese', 'Catalan', 'Chinese', 'Croatian', 'Czech', 'Danish', 'Dutch', 'English', 'Estonian', 'Faroese', 'Finnish', 'French', 'Galician', 'Georgian', 'German', 'Greek', 'Gujarati', 'Haitian Creole', 'Hausa', 'Hebrew', 'Hindi', 'Hungarian', 'Icelandic', 'Indonesian', 'Italian', 'Japanese', 'Kannada', 'Kazakh', 'Korean', 'Kurdish', 'Kyrgyz', 'Lao', 'Lithuanian', 'Luxembourgish', 'Macedonian', 'Malay', 'Malayalam', 'Maltese', 'Maori', 'Marathi', 'Mongolian', 'Nepali', 'Norwegian', 'Norwegian Nynorsk', 'Pashto', 'Persian', 'Polish', 'Portuguese', 'Punjabi', 'Romanian', 'Russian', 'Serbian', 'Sinhala', 'Slovak', 'Slovenian', 'Somali', 'Spanish', 'Sundanese', 'Swahili', 'Swedish', 'Tamil', 'Telugu', 'Thai', 'Turkish', 'Ukrainian', 'Urdu', 'Uzbek', 'Vietnamese', 'Welsh', 'Yiddish', 'Yoruba', 'Zulu']
+# Destination_Language= "English"# @param ['Same as Source Language','English','Hindi','Bengali','Akan', 'Albanian', 'Amharic', 'Arabic', 'Armenian', 'Assamese', 'Azerbaijani', 'Basque', 'Bashkir', 'Bengali', 'Bosnian', 'Bulgarian', 'Burmese', 'Catalan', 'Chinese', 'Croatian', 'Czech', 'Danish', 'Dutch', 'English', 'Estonian', 'Faroese', 'Finnish', 'French', 'Galician', 'Georgian', 'German', 'Greek', 'Gujarati', 'Haitian Creole', 'Hausa', 'Hebrew', 'Hindi', 'Hungarian', 'Icelandic', 'Indonesian', 'Italian', 'Japanese', 'Kannada', 'Kazakh', 'Korean', 'Kurdish', 'Kyrgyz', 'Lao', 'Lithuanian', 'Luxembourgish', 'Macedonian', 'Malay', 'Malayalam', 'Maltese', 'Maori', 'Marathi', 'Mongolian', 'Nepali', 'Norwegian', 'Norwegian Nynorsk', 'Pashto', 'Persian', 'Polish', 'Portuguese', 'Punjabi', 'Romanian', 'Russian', 'Serbian', 'Sinhala', 'Slovak', 'Slovenian', 'Somali', 'Spanish', 'Sundanese', 'Swahili', 'Swedish', 'Tamil', 'Telugu', 'Thai', 'Turkish', 'Ukrainian', 'Urdu', 'Uzbek', 'Vietnamese', 'Welsh', 'Yiddish', 'Yoruba', 'Zulu']
+# original_srt_file,translated_srt_file,original_text_file,translated_text_file,used_audio_path=whisper_subtitle(Audio_or_Video_File,Source_Language,Destination_Language)
+
+# from google.colab import files
+# print(f"Original SRT Save at: {original_srt_file}")
+# files.download(original_srt_file)
+# if translated_srt_file is not None:
+#   print(f"Translated SRT Save at: {translated_srt_file}")
+#   files.download(translated_srt_file)
+
+
+
 source_lang_list=['Automatic']
 source_lang_list.extend(available_language)
 destination_lang_list=["Same as Source Language"]
